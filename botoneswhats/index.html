@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nuevo WhatsApp - Contacta con nosotros</title>
+  <title>Nuevo Whatsapp Optimizarte</title>
 
-  <!-- Metadatos Open Graph para la tarjeta de WhatsApp -->
+  <!-- REDIRECCIÓN AUTOMÁTICA: Esto salta el paso de en medio y abre el chat directamente -->
+  <meta http-equiv="refresh" content="0; url=https://wa.me/34972426665">
+
+  <!-- Metadatos Open Graph para la tarjeta de previsualización en WhatsApp -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://optimizarte.github.io/apps/botoneswhats/index.html">
-  <meta property="og:title" content="Nuevo WhatsApp">
-  <meta property="og:description" content="Toca aquí para abrir el chat y contactar directamente">
+  <meta property="og:title" content="Nuevo Whatsapp Optimizarte">
+  <meta property="og:description" content="Clic aqui para contactar directamente por el nuevo whatsapp de la oficina.">
   <meta property="og:image" content="https://optimizarte.github.io/apps/botoneswhats/botonwhatssendpulse.jpg">
   <meta property="og:image:secure_url" content="https://optimizarte.github.io/apps/botoneswhats/botonwhatssendpulse.jpg">
   <meta property="og:image:type" content="image/jpeg">
@@ -70,15 +73,22 @@
       line-height: 1.4;
     }
   </style>
+
+  <!-- Refuerzo de redirección con JavaScript (por si el navegador bloquea el meta refresh) -->
+  <script>
+    setTimeout(function() {
+      window.location.href = "https://wa.me/34972426665";
+    }, 300);
+  </script>
 </head>
 <body>
 
   <div class="card">
-    <p class="text-hint">Pulsa en el botón para iniciar conversación:</p>
+    <p class="text-hint">Clic aqui para contactar directamente por el nuevo whatsapp de la oficina.</p>
     
-    <!-- Enlace directo con tu número de teléfono -->
-    <a class="btn-link" href="https://wa.me/34972426665">
-      <img class="btn-img" src="botonwhatssendpulse.jpg" alt="Nuevo WhatsApp">
+    <!-- Enlace directo con tu número de teléfono (por si la redirección automática falla) -->
+    <a class="btn-link" href="https://wa.me/34972426665" target="_blank">
+      <img class="btn-img" src="botonwhatssendpulse.jpg" alt="Nuevo Whatsapp Optimizarte">
     </a>
   </div>
 
